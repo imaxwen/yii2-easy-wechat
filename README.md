@@ -85,3 +85,8 @@ OR
 see [EasyWeChat Docs](https://easywechat.org/zh-cn/docs/index.html).
 
 Thanks to `overtrue/wechat` , realy a easy way to play with wechat SDK 😁.
+
+## More repos for Yii2:
+[yii2-ckeditor-widget](https://github.com/max-wen/yii2-ckeditor-widget)   
+[yii2-adminlte-gii](https://github.com/max-wen/yii2-adminlte-gii)   
+[yii2-curl](https://github.com/max-wen/yii2-curl)   
