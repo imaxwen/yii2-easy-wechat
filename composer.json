@@ -1,0 +1,21 @@
+{
+	"name": "maxwen/yii2-easyWeChat",
+	"description": "WeChat SDK for yii2, based on overtrue/easywechat",
+	"minimum-stability": "dev",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "max.wen",
+			"email": "max.wen@qq.com"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "~2.0.6",
+		"overtrue/wechat": "~3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"maxwen\\easywechat\\": ""
+		}
+	}
+}
