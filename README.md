@@ -1,4 +1,4 @@
-# yii2-easyWeChat
+# yii2-easy-wechat
 WeChat SDK for yii2 , based on [overtrue/wechat](https://github.com/overtrue/wechat).     
 This extension helps you access `overtrue/wechat` application in a simple & familiar way:   
 `Yii::$app->wechat`.   
