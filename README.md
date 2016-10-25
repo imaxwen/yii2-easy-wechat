@@ -29,6 +29,8 @@ Add the SDK as a yii2 application `component` in the `config/main.php`:
 ## Usage
 ```php
 
+// here are two representative examples that will help you:
+
 // 微信网页授权:
 if(Yii::$app->wechat->isWechat && !Yii::$app->wechat->isAuthorized()) {
 	return Yii::$app->wechat->authorizeRequired()->send();
