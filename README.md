@@ -5,7 +5,7 @@ This extension helps you access `overtrue/wechat` application in a simple & fami
 
 ## Installation
 ```
-composer require maxwen/yii2-easyWeChat
+composer require maxwen/yii2-easy-wechat
 ```
 
 ## Configuration
