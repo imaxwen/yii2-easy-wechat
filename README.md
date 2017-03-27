@@ -2,6 +2,10 @@
 WeChat SDK for yii2 , based on [overtrue/wechat](https://github.com/overtrue/wechat).     
 This extension helps you access `overtrue/wechat` application in a simple & familiar way:   `Yii::$app->wechat`.   
 
+[![Latest Stable Version](https://poser.pugx.org/maxwen/yii2-easy-wechat/v/stable)](https://packagist.org/packages/maxwen/yii2-easy-wechat)
+[![Total Downloads](https://poser.pugx.org/maxwen/yii2-easy-wechat/downloads)](https://packagist.org/packages/maxwen/yii2-easy-wechat)
+[![License](https://poser.pugx.org/maxwen/yii2-easy-wechat/license)](https://packagist.org/packages/maxwen/yii2-easy-wechat)
+
 ## Installation
 ```
 composer require maxwen/yii2-easy-wechat
