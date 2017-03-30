@@ -11,6 +11,8 @@ This extension helps you access `overtrue/wechat` application in a simple & fami
 composer require maxwen/yii2-easy-wechat
 ```
 
+### V2.x 正在开发中，计划以module形式添加一些微信后台管理功能 敬请期待
+
 ## Configuration
 
 Add the SDK as a yii2 application `component` in the `config/main.php`:

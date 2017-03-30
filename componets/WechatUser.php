@@ -5,7 +5,7 @@
  * Date: <2016/05/10 - 17:17>
  */
 
-namespace maxwen\easywechat;
+namespace maxwen\easywechat\components;
 
 
 use yii\base\Component;
