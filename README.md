@@ -29,6 +29,8 @@ Add the SDK as a yii2 application `component` in the `config/main.php`:
 ]
 ```
 
+### V2.x is under development !!
+
 ## Usage
 ```php
 
