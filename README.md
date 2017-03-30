@@ -22,7 +22,7 @@ Add the SDK as a yii2 application `component` in the `config/main.php`:
 'components' => [
 	// ...
 	'wechat' => [
-		'class' => 'maxwen\easywechat\Wechat',
+		'class' => 'maxwen\easywechat\components\Wechat',
 		// 'userOptions' => []  # user identity class params
 		// 'sessionParam' => '' # wechat user info will be stored in session under this key
 		// 'returnUrlParam' => '' # returnUrl param stored in session
