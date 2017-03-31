@@ -148,7 +148,7 @@ class Wechat extends Component
 		try {
 			return parent::__get($name);
 		}catch (\Exception $e) {
-			if($this->app->$name) {
+			if($this->getApp()->$name) {
 				return $this->app->$name;
 			}else{
 				throw $e->getPrevious();
