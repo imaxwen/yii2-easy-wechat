@@ -1,6 +1,6 @@
 {
 	"name": "maxwen/yii2-easy-wechat",
-	"description": "WeChat SDK for yii2, based on overtrue/easywechat",
+	"description": "WeChat Module for yii2, based on overtrue/easywechat",
 	"minimum-stability": "dev",
 	"license": "MIT",
 	"authors": [
@@ -15,7 +15,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"maxwen\\easywechat\\": "src"
+			"maxwen\\easywechat\\": ""
 		}
 	}
 }
