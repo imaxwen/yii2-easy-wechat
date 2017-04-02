@@ -2,19 +2,18 @@
 /**
  * Project: jianjiang.
  * Author: Max
- * Time: <17/4/1 12:49>
+ * Time: <17/4/2 17:13>
  */
 
-namespace maxwen\easywechat\controllers;
+namespace maxwen\wechat\controllers;
 
 
 use yii\web\Controller;
 
-class DefaultController extends Controller
+class AccountController extends Controller
 {
-
     public function actionIndex()
     {
-        echo 111;
+        echo __METHOD__;
     }
 }

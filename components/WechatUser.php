@@ -1,11 +1,11 @@
 <?php
 /**
- * Project: yii2-easyWeChat.
+ * Project: yii2-easy-wechat.
  * Author: Max.wen
  * Date: <2016/05/10 - 17:17>
  */
 
-namespace maxwen\easywechat\components;
+namespace maxwen\wechat\components;
 
 
 use yii\base\Component;

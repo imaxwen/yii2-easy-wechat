@@ -6,7 +6,7 @@
  */
 
 
-namespace maxwen\easywechat;
+namespace maxwen\wechat;
 
 /**
  * wechat module definition class
@@ -16,7 +16,9 @@ class Module extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'maxwen\easywechat\controllers';
+    public $controllerNamespace = 'maxwen\wechat\controllers';
+
+    public $defaultRoute = 'account';
 
     /**
      * @inheritdoc
