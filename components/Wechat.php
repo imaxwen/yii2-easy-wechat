@@ -1,6 +1,6 @@
 <?php
 /**
- * Project: yii2-easyWeChat.
+ * Project: yii2-easy-wechat.
  * Author: Max.wen
  * Date: <2016/05/10 - 14:31>
  */
@@ -23,11 +23,6 @@ use yii\base\Component;
 class Wechat extends Component
 {
 	/**
-	 * user identity class params
-	 * @var array
-	 */
-	public $userOptions = [];
-	/**
 	 * wechat user info will be stored in session under this key
 	 * @var string
 	 */
@@ -41,10 +36,47 @@ class Wechat extends Component
 	 * @var Application
 	 */
 	private static $_app;
+    /**
+     * Wechat Config data
+     * defaults to Yii::$app->params['WECHAT']
+     * @var array
+     */
+	private $_config = [];
 	/**
 	 * @var WechatUser
 	 */
 	private static $_user;
+
+    /**
+     * @return array
+     */
+	public function getConfig()
+    {
+        return $this->_config;
+    }
+
+    /**
+     * @param array $config
+     */
+    public function setConfig(array $config)
+    {
+        $this->_config = $config;
+        if(empty($this->_config)) {
+            throw new yii\base\InvalidConfigException('Wechat configuration can not be empty.');
+        }
+
+        $this->reset();
+    }
+
+    /**
+     * @param $key
+     * @param $newVal
+     */
+    public function updateConfig($key, $newVal)
+    {
+        $this->_config[$key] = $newVal;
+        $this->reset();
+    }
 
 	/**
 	 * @return yii\web\Response
@@ -115,15 +147,24 @@ class Wechat extends Component
 	public function getApp()
 	{
 		if(! self::$_app instanceof Application){
-			self::$_app = new Application(Yii::$app->params['WECHAT']);
+		    $this->setConfig($this->_config ? : Yii::$app->params['WECHAT']);
+			self::$_app = new Application($this->config);
 		}
 		return self::$_app;
 	}
 
+    /**
+     * reset application
+     */
+	public function reset()
+    {
+        self::$_app = null;
+    }
+
 	/**
 	 * @return WechatUser|null
 	 */
-	public function getUser()
+	public function getUserBugged()
 	{
 		if(!$this->isAuthorized()) {
 			return new WechatUser();
