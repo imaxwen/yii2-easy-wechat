@@ -49,7 +49,7 @@ class WechatUser extends Component
 	/**
 	 * @var string
 	 */
-	public $provider
+	public $provider;
 
 	/**
 	 * @return string
