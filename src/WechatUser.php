@@ -46,6 +46,10 @@ class WechatUser extends Component
 	 * @var \Overtrue\Socialite\AccessToken
 	 */
 	public $token;
+	/**
+	 * @var string
+	 */
+	public $provider;
 
 	/**
 	 * @return string
